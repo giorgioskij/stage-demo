@@ -4,8 +4,11 @@
   --bg-color: #0f0f0f;
   --accent-color: #4f46e5;
   --font-color: #fbf8f5;
-  --bg-secondary: #3d3f4d !important;
-  --bg-tertiary: #232638 !important;
+  /* --bg-secondary: #3d3f4d !important;
+  --bg-tertiary: #232638 !important; */
+
+  --bg-secondary: #0f0f0f !important;
+  --bg-tertiary: #0f0f0f !important;
 
 /* Some color placeholders for interactive states. You can tweak or remove. */
   --primary: #1b717d !important;
@@ -113,6 +116,8 @@ h1 {
   box-shadow: 0 1px 3px rgba(0,0,0,0.1) !important;
   text-align: center;
   overflow: hidden;
+  border: 1px solid white;
+  border-radius: 5px;
 }
 
 /* Audio row */
