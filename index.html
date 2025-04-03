@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <title>STAGE: Demo Samples</title>
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet"/>
+  
+  <!-- Styles -->
+  <link rel="stylesheet" href="styles.css"/>
+
+  <!-- Simple JavaScript for Tab Switching -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      const tabButtons = document.querySelectorAll(".tab-link");
+      const allTabContents = document.querySelectorAll(".tab-content");
+
+      tabButtons.forEach(button => {
+        button.addEventListener("click", () => {
+          // Remove "current" from all tab buttons
+          tabButtons.forEach(btn => btn.classList.remove("current"));
+          // Hide all tab contents
+          allTabContents.forEach(tab => tab.classList.remove("current"));
+
+          // Add "current" to the clicked button
+          button.classList.add("current");
+          // Show the corresponding tab content
+          const tabId = button.getAttribute("data-tab");
+          document.getElementById(tabId).classList.add("current");
+        });
+      });
+    });
+  </script>
+</head>
+
+<body>
+  <div class="gradio-container">
+    <!-- Header and description -->
+    <h1>STAGE: demo samples</h1>
+    <div class="centered-text">
+      Listen to audio samples from STAGE, our <i>Single-stem Accompaniment Generation Model</i>.<br>
+      All generated samples are straight from the model, with no post-processing.<br>
+      All contexts are taken from an isolated test dataset.<br>
+      <br>
+      <a href="https://github.com/yourname/yourproject" target="_blank">GitHub</a> |
+      <a href="https://arxiv.org/abs/yourpaperid" target="_blank">arXiv</a>
+    </div>
+
+    <!-- Tabs -->
+    <div class="tabs-container">
+      <ul class="tab-container">
+        <li class="tab-link current" data-tab="drums-tab">Drums</li>
+        <li class="tab-link" data-tab="bass-tab">Bass</li>
+      </ul>
+
+      <!-- Drums tab content -->
+      <div id="drums-tab" class="tab-content current">
+        <!-- Repeat the pattern below for each “Sample i” in the Drums category -->
+
+        <div class="audio-section">
+          <div class="sample-title">Sample 1</div>
+          <div class="audio-row">
+            <!-- Replace these src paths with your actual audio file paths -->
+            <div class="audio-player">
+              <label>Context</label>
+              <audio controls>
+                <source src="audio/drums/subdir1/context.wav" type="audio/wav"/>
+              </audio>
+            </div>
+            <div class="audio-player">
+              <label>Generated</label>
+              <audio controls>
+                <source src="audio/drums/subdir1/gen.wav" type="audio/wav"/>
+              </audio>
+            </div>
+            <div class="audio-player">
+              <label>Mix</label>
+              <audio controls>
+                <source src="audio/drums/subdir1/mix.wav" type="audio/wav"/>
+              </audio>
+            </div>
+          </div>
+        </div>
+
+        <!-- Add more "Sample X" blocks for Drums as needed -->
+      </div>
+
+      <!-- Bass tab content -->
+      <div id="bass-tab" class="tab-content">
+        <!-- Repeat the pattern below for each “Sample i” in the Bass category -->
+
+        <div class="audio-section">
+          <div class="sample-title">Sample 1</div>
+          <div class="audio-row">
+            <!-- Replace these src paths with your actual audio file paths -->
+            <div class="audio-player">
+              <label>Context</label>
+              <audio controls>
+                <source src="audio/bass/subdir1/context.wav" type="audio/wav"/>
+              </audio>
+            </div>
+            <div class="audio-player">
+              <label>Generated</label>
+              <audio controls>
+                <source src="audio/bass/subdir1/gen.wav" type="audio/wav"/>
+              </audio>
+            </div>
+            <div class="audio-player">
+              <label>Mix</label>
+              <audio controls>
+                <source src="audio/bass/subdir1/mix.wav" type="audio/wav"/>
+              </audio>
+            </div>
+          </div>
+        </div>
+
+        <!-- Add more "Sample X" blocks for Bass as needed -->
+      </div>
+    </div>
+  </div>
+</body>
+</html>
