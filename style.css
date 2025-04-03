@@ -151,6 +151,11 @@ h1 {
   background-color: transparent !important;
 }
 
+.tab-link[data-tab="drums-tab"] {
+    border: None;
+    border-right: 1px solid white;
+}
+
 /* Hide playback speed, skip backward/forward if you prefer:
    (this will vary based on native browser controls) */
 
