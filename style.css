@@ -116,8 +116,6 @@ h1 {
   box-shadow: 0 1px 3px rgba(0,0,0,0.1) !important;
   text-align: center;
   overflow: hidden;
-  border: 1px solid white;
-  border-radius: 5px;
 }
 
 /* Audio row */
@@ -129,6 +127,9 @@ h1 {
   justify-content: center !important;
   background-color: var(--bg-secondary) !important;
   padding: 10px 0;
+
+  border: 1px solid white;
+  border-radius: 5px;
 }
 
 /* Audio players */
