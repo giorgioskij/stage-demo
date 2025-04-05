@@ -1,169 +1,133 @@
+
 @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
 
 :root {
-  --bg-color: #0f0f0f;
-  --accent-color: #4f46e5;
-  --font-color: #fbf8f5;
-  /* --bg-secondary: #3d3f4d !important;
-  --bg-tertiary: #232638 !important; */
-
-  --bg-secondary: #0f0f0f !important;
-  --bg-tertiary: #0f0f0f !important;
-
-/* Some color placeholders for interactive states. You can tweak or remove. */
-  --primary: #1b717d !important;
-  --primary-hover: #1b717d !important;
-  --primary-pressed: #1b717d !important;
-  --secondary-400: #1b717d !important;
-  --secondary-500: #1b717d !important;
-  --secondary-600: #1b717d !important;
-  --secondary-700: #1b717d !important;
-  --secondary-800: #1b717d !important;
-  --secondary-900: #1b717d !important;
-  --link-text-color: #1b717d !important;
+    --bg-color: #0f0f0f;
+    --accent-color: #4f46e5;
+    --font-color: #fbf8f5;
+    --bg-secondary: #0f0f0f !important;
+    --bg-tertiary: #0f0f0f !important;
+    /* Color placeholders for interactive states */
+    --primary: #1b717d !important;
+    --link-text-color: #1b717d !important;
 }
 
 body,
 .gradio-container,
 .gr-block {
-  font-family: 'DM Serif Display', serif !important;
-  background-color: var(--bg-color);
-  color: var(--font-color) !important;
+    font-family: 'DM Serif Display', serif !important;
+    background-color: var(--bg-color);
+    color: var(--font-color) !important;
 }
 
 strong {
-  color: inherit !important;
+    color: inherit !important;
 }
 
 a {
-  color: var(--accent-color);
+    color: var(--accent-color);
 }
 
 /* Header styling */
 h1 {
-  text-align: center;
-  font-size: 5em;
-  margin: 20px 0 10px !important;
-  font-weight: 700;
-  color: inherit;
+    text-align: center;
+    font-size: 5em;
+    margin: 20px 0 10px !important;
+    font-weight: 700;
+    color: inherit;
 }
 
 /* Description text */
 .centered-text {
-  text-align: center !important;
-  margin-bottom: 24px !important;
-  font-size: 1.5em !important;
-  color: inherit;
+    text-align: center !important;
+    margin-bottom: 24px !important;
+    font-size: 1.5em !important;
+    color: inherit;
 }
 
 /* Tabs container */
 .tabs-container {
-  text-align: center;
-  width: 1000px;
-  margin: 0 auto;
-  color: inherit;
+    text-align: center;
+    width: 1000px;
+    margin: 0 auto;
+    color: inherit;
 }
 
 /* Tab menu style */
 .tab-container {
-  list-style: none;
-  padding: 0;
-  margin: 0 auto 20px auto;
-  display: flex;
-  justify-content: center;
+    list-style: none;
+    padding: 0;
+    margin: 0 auto 20px auto;
+    display: flex;
+    justify-content: center;
 }
 
 .tab-container li {
-  margin: 0 10px;
-  padding: 10px 20px;
-  cursor: pointer;
-  font-size: 1.5em;
-  color: inherit;
-  border-bottom: 3px solid transparent;
+    margin: 0 10px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 1.5em;
+    color: inherit;
+    border-bottom: 3px solid transparent;
 }
 
 .tab-container li:hover {
-  color: var(--accent-color);
+    color: var(--accent-color);
 }
 
 .tab-container li.current {
-  color: var(--accent-color) !important;
-  border-bottom: 3px solid var(--accent-color);
+    color: var(--accent-color) !important;
+    border-bottom: 3px solid var(--accent-color);
 }
 
 /* Tab content sections */
 .tab-content {
-  display: none;
+    display: none;
 }
 .tab-content.current {
-  display: block;
-  font-family: "Roboto Mono", monospace !important;
+    display: block;
+    font-family: "Roboto Mono", monospace !important;
 }
 
 /* Sample title bar */
 .sample-title {
-  font-size: 1.1em !important;
-  background-color: var(--bg-secondary) !important;
-  margin: 0;
-  padding: 8px;
-  border-radius: 8px 8px 0 0;
+    font-size: 1.2em !important;
+    background-color: var(--bg-secondary) !important;
+    margin: 0;
+    padding: 8px;
+    border-radius: 8px 8px 0 0;
 }
 
-/* Audio section container (card) */
-.audio-section {
-  margin-bottom: 16px !important;
-  border-radius: 8px !important;
-  box-shadow: 0 1px 3px rgba(0,0,0,0.1) !important;
-  text-align: center;
-  overflow: hidden;
-}
-
-/* Audio row */
+/* Audio row container */
 .audio-row {
-  display: flex !important;
-  flex-direction: row !important;
-  gap: 5px !important;
-  align-items: center !important;
-  justify-content: center !important;
-  background-color: var(--bg-secondary) !important;
-  padding: 10px 0;
-
-  border: 1px solid white;
-  border-radius: 5px;
-  margin-bottom: 40px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--bg-secondary);
+    padding: 10px;
+    border: 1px solid white;
+    border-radius: 5px;
+    margin-bottom: 40px;
 }
 
-/* Audio players */
+/* Audio player styling */
 .audio-player {
-  border-radius: 5px !important;
-  border-width: 0px !important;
-  margin: auto;
-  background-color: var(--bg-tertiary) !important;
-  padding: 10px;
-  text-align: center;
+    flex: 1;
+    background-color: var(--bg-tertiary);
+    padding: 10px;
+    text-align: center;
 }
 
 .audio-player label {
-  display: block;
-  font-weight: bold;
-  margin-bottom: 5px;
-  color: inherit;
-  background-color: transparent !important;
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: inherit;
+    background-color: transparent;
 }
 
-.tab-link[data-tab="drums-tab"] {
-    border: None;
-    border-right: 1px solid white;
+.tab-link {
+    width: 200px;
 }
-
-/* Hide playback speed, skip backward/forward if you prefer:
-   (this will vary based on native browser controls) */
-
-/* .audio-player button[aria-label="Adjust playback speed to 1.5x"] {
-  display: none !important;
-}
-
-.rewind,
-.skip {
-  display: none !important;
-} */
