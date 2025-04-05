@@ -121,7 +121,7 @@ h1 {
 }
 
 .audio-player label {
-    font-size: 1em;
+    font-size: 1em !important;
     display: block;
     font-weight: bold;
     margin-bottom: 5px;
