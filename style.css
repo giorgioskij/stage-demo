@@ -121,6 +121,7 @@ h1 {
 }
 
 .audio-player label {
+    font-size: 1em;
     display: block;
     font-weight: bold;
     margin-bottom: 5px;
@@ -132,15 +133,13 @@ h1 {
     width: 200px;
 }
 
-@media (max-width: 1000px) {
-    .tabs-container {
-        width: 90%;
-    }
-}
 
 @media (max-width: 1080px) {
     audio {
         margin-bottom: 40px !important;
+    }
+    .tabs-container {
+        width: 90%;
     }
 }
 
