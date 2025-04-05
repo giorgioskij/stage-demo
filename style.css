@@ -132,6 +132,11 @@ h1 {
     width: 200px;
 }
 
+audio {
+    display: inline-block;
+    margin: 0 auto;
+}
+
 @media (max-width: 768px) {
 /* @media (max-width: 1080px) { */
     .audio-row {
@@ -148,8 +153,5 @@ h1 {
         width: 30px;
         height: 30px;
     }
-    audio {
-        display: inline-block;
-        margin: 0 auto;
-    }
+
 }
