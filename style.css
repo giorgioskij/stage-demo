@@ -137,8 +137,9 @@ audio {
     margin: 0 auto;
 }
 
-@media (max-width: 768px) {
-/* @media (max-width: 1080px) { */
+
+/* @media (max-width: 768px) { */
+@media (max-width: 1080px) {
     .audio-row {
         flex-direction: column;
     }
@@ -152,6 +153,10 @@ audio {
     audio::-webkit-media-controls-play-button {
         width: 30px;
         height: 30px;
+    }
+
+    audio {
+        margin-bottom: 40px !important;
     }
 
 }
