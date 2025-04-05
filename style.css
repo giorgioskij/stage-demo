@@ -144,9 +144,8 @@ h1 {
         margin: 0 auto;
         color: inherit;
     }
-}
-
-audio {
-  -webkit-appearance: none;
-  appearance: none;
+    audio::-webkit-media-controls-play-button {
+        width: 30px;
+        height: 30px;
+    }
 }
